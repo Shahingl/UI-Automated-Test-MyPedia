@@ -1,5 +1,4 @@
 var util = require('util');
-//var url = process.env.envName;
 
 var url = process.env.URL;
 console.log(url);
@@ -19,7 +18,7 @@ describe('Launch Mypedia', function(){
     browser.ignoreSynchronization = true;
     browser.waitForAngularEnabled(false);
     browser.get(url);
-    browser.wait(until.presenceOf(loginPage.eleSignIn()), 95000, 'Sign In page taking too long to appear');
+    browser.wait(until.presenceOf(loginPage.userNameDisplay()), 95000, 'Sign In page taking too long to appear');
     browser.executeScript('window.localStorage.clear();');
     browser.executeScript('window.sessionStorage.clear();');
   });

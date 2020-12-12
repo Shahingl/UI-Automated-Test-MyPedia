@@ -1,4 +1,4 @@
-require('dotenv').load();
+require('dotenv').config();
 var HTMLReport = require('protractor-html-reporter-2');
 var jasmineReporters = require('jasmine-reporters');
 
@@ -13,9 +13,9 @@ defaultTimeoutInterval: 2500000,
 isVerbose: true
 },
 
-params: {
+/*params: {
 testdata: require('../../Test-Data/testData.json')
-},
+},*/
 
 onPrepare: function() {
 browser.ignoreSynchronization = true;
