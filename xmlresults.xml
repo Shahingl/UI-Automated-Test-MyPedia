@@ -1,41 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="1" tests="1" time="1.201">
- <testsuite name="Launch Mypedia" timestamp="2020-12-12T13:48:09" hostname="localhost" time="1.201" errors="0" tests="1" skipped="0" disabled="0" failures="1">
-  <testcase classname="Launch Mypedia" name="should login live person Bot &amp; Automation Platform succesfully" time="1.198">
-   <failure type="exception" message="Failed: Cannot read property &apos;isPresent&apos; of undefined"><![CDATA[TypeError: Cannot read property 'isPresent' of undefined
-    at ProtractorExpectedConditions.presenceOf (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\protractor\built\expectedConditions.js:341:30)
-    at UserContext.<anonymous> (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\E2E\specs\loginMypedia.spec.js:21:24)
-    at C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\jasminewd2\index.js:112:25
-    at new ManagedPromise (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\selenium-webdriver\lib\promise.js:1077:7)
-    at ControlFlow.promise (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\selenium-webdriver\lib\promise.js:2505:12)
-    at schedulerExecute (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\jasminewd2\index.js:95:18)
-    at TaskQueue.execute_ (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\selenium-webdriver\lib\promise.js:3084:14)
-    at TaskQueue.executeNext_ (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\selenium-webdriver\lib\promise.js:3067:27)
-    at C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\selenium-webdriver\lib\promise.js:2927:27
-    at C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\selenium-webdriver\lib\promise.js:668:7
-From: Task: Run beforeEach in control flow
-    at UserContext.<anonymous> (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\jasminewd2\index.js:94:19)
-    at attempt (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
-    at QueueRunner.run (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
-    at QueueRunner.execute (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
-    at Spec.queueRunnerFactory (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
-    at Spec.execute (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
-    at UserContext.fn (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
-    at attempt (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
-    at QueueRunner.run (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
-    at QueueRunner.execute (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+<testsuites disabled="0" errors="0" failures="1" tests="6" time="113.381">
+ <testsuite name="Launch Mypedia" timestamp="2020-12-12T22:45:01" hostname="localhost" time="88.998" errors="0" tests="3" skipped="0" disabled="0" failures="1">
+  <testcase classname="Launch Mypedia" name="Ensure Mypedia launch successfully loads" time="55.299" />
+  <testcase classname="Launch Mypedia" name="Verify the language dropdown has at least 3 languages" time="16.591">
+   <failure type="exception" message="Failed: element click intercepted: Element &lt;div class=&quot;accountDetailsLangDropDownWrap&quot; style=&quot;position: absolute; right: 6%; top: 50px; z-index: 2;&quot;&gt;...&lt;/div&gt; is not clickable at point (1151, 80). Other element would receive the click: &lt;iframe src=&quot;https://prod.use.cas.pulse.pearson-intl.com/v0/getresource?folder=libraries/WhatIsNew&amp;amp;filename=WhatIsNew.html&amp;amp;lang=en&amp;amp;bgColor=007fa3&amp;amp;brand=mypedia&amp;amp;newVersionDate=20180417&amp;amp;platform=web&amp;amp;txtColor=ffffff&quot; id=&quot;contentIframe&quot; width=&quot;100%&quot; style=&quot;position: absolute; height: 100%; left: 0px; top: 0px; border: 0px; width: calc(100% + 1px);&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=87.0.4280.66)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;YCSLAP0254&apos;, ip: &apos;192.168.1.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.7&apos;
+Driver info: driver.version: unknown"><![CDATA[WebDriverError: element click intercepted: Element <div class="accountDetailsLangDropDownWrap" style="position: absolute; right: 6%; top: 50px; z-index: 2;">...</div> is not clickable at point (1151, 80). Other element would receive the click: <iframe src="https://prod.use.cas.pulse.pearson-intl.com/v0/getresource?folder=libraries/WhatIsNew&amp;filename=WhatIsNew.html&amp;lang=en&amp;bgColor=007fa3&amp;brand=mypedia&amp;newVersionDate=20180417&amp;platform=web&amp;txtColor=ffffff" id="contentIframe" width="100%" style="position: absolute; height: 100%; left: 0px; top: 0px; border: 0px; width: calc(100% + 1px);"></iframe>
+  (Session info: chrome=87.0.4280.66)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'YCSLAP0254', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.7'
+Driver info: driver.version: unknown
+    at Object.checkLegacyResponse (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+From: Task: WebElement.click()
+    at thenableWebDriverProxy.schedule (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at WebElement.schedule_ (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\webdriver.js:2010:25)
+    at WebElement.click (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\webdriver.js:2092:17)
+    at actionFn (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\protractor\built\element.js:89:44)
+    at Array.map (<anonymous>)
+    at C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\protractor\built\element.js:461:65
+    at ManagedPromise.invokeCallback_ (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\promise.js:2927:27Error
+    at ElementArrayFinder.applyAction_ (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\protractor\built\element.js:459:27)
+    at ElementArrayFinder.<computed> [as click] (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\protractor\built\element.js:91:29)
+    at ElementFinder.<computed> [as click] (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\protractor\built\element.js:831:22)
+    at loginPage.languageDropdown (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\E2E\pages\login.page.js:25:71)
+    at UserContext.<anonymous> (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\E2E\specs\loginMypedia.spec.js:39:15)
+    at C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\jasminewd2\index.js:112:25
+    at new ManagedPromise (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+    at ControlFlow.promise (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+    at schedulerExecute (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\jasminewd2\index.js:95:18)
+    at TaskQueue.execute_ (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+From: Task: Run it("Verify the language dropdown has at least 3 languages") in control flow
+    at UserContext.<anonymous> (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\jasminewd2\index.js:94:19)
+    at attempt (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+    at QueueRunner.run (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+    at runNext (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+    at C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4264:13
+    at C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4172:9
+    at C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\jasminewd2\index.js:64:48
+    at ControlFlow.emit (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\events.js:62:21)
+    at ControlFlow.shutdown_ (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\promise.js:2674:10)
+    at C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\selenium-webdriver\lib\promise.js:2599:53
 From asynchronous test: 
 Error
-    at Suite.<anonymous> (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\E2E\specs\loginMypedia.spec.js:16:3)
-    at addSpecsToSuite (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
-    at Env.describe (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
-    at describe (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
-    at Object.<anonymous> (C:\Users\Shahbaz(Irfan)\Desktop\UI\UI-Automated-Test-MyPedia\E2E\specs\loginMypedia.spec.js:12:1)
-    at Module._compile (internal/modules/cjs/loader.js:1133:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1153:10)
-    at Module.load (internal/modules/cjs/loader.js:977:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:877:14)]]>
+    at Suite.<anonymous> (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\E2E\specs\loginMypedia.spec.js:34:3)
+    at addSpecsToSuite (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (C:\Users\mdkhalid.n.YETHI\Desktop\UI\UI-Automated-Test-MyPedia-main\E2E\specs\loginMypedia.spec.js:12:1)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)]]>
    </failure>
   </testcase>
+  <testcase classname="Launch Mypedia" name="Verify the different languages" time="17.106" />
+ </testsuite>
+ <testsuite name="Create Account" timestamp="2020-12-12T22:46:30" hostname="localhost" time="24.383" errors="0" tests="3" skipped="0" disabled="0" failures="0">
+  <testcase classname="Create Account" name="should Create Account" time="12.903" />
+  <testcase classname="Create Account" name="shoul Fill all the information" time="6.357" />
+  <testcase classname="Create Account" name="should verify CREATE ACCOUNT BUTTON is disabled since all fields are not filled yet" time="5.123" />
  </testsuite>
 </testsuites>

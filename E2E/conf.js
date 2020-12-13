@@ -4,7 +4,8 @@ var jasmineReporters = require('jasmine-reporters');
 
 exports.config = {
   seleniumAddress: process.env.SERVER,
-  specs: ['specs/loginMypedia.spec.js'],
+  specs: ['specs/loginMypedia.spec.js',
+          'specs/createAccount.spec.js'],
   framework: 'jasmine',
 allScriptsTimeout: 20000,
 jasmineNodeOpts: {
@@ -12,10 +13,6 @@ showColors: true,
 defaultTimeoutInterval: 2500000,
 isVerbose: true
 },
-
-/*params: {
-testdata: require('../../Test-Data/testData.json')
-},*/
 
 onPrepare: function() {
 browser.ignoreSynchronization = true;
@@ -41,7 +38,7 @@ var pst = date.toUTCString();
 var HTMLReport = require('protractor-html-reporter-2');
 
 testConfig = {
-reportTitle: 'Bot Accounts Functionality Test Execution Report',
+reportTitle: 'MyPedia Website Functionality Test Execution Report',
 outputPath: './',
 outputFilename: './ProtractorTestReport',
 screenshotPath: './screenshots',

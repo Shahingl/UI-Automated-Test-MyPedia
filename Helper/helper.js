@@ -1,5 +1,3 @@
-//    browser.wait(expec_cond.invisibilityOf(newDomainPage.getloader()), 120000)
-
 "use strict";
 exports.__esModule = true;
 var protractor_1 = require("protractor");
@@ -14,7 +12,7 @@ module.exports = {
 
     waitforElementDisplayed:function(element){
 
-        return browser.wait(()=> (element.isDisplayed()),10000);
+        return browser.wait(()=> (element.isDisplayed()),12500000);
     },
 
     waitforElementSelected:function(element){
